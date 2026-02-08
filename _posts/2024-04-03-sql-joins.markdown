@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 3
-title: SQL Query (Comming Soon)
+title: SQL Query (Coming Soon)
 img: sql.png
 alt: image-alt
 
