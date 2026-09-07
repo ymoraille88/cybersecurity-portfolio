@@ -602,10 +602,14 @@ footer .footer-below {
     }
 }
 
+/* Center portfolio card content */
+#portfolio .portfolio-flex-item {
+    text-align: center;
+}
+
 /* Coming Soon Project Label */
 .coming-soon-label {
-    display: block;
-    width: fit-content;
+    display: inline-block;
     margin: 12px auto 0;
     padding: 5px 12px;
     font-size: 13px;
