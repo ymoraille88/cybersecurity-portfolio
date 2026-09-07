@@ -616,8 +616,8 @@ footer .footer-below {
 /* Center the final Python project underneath Azure */
 @media (min-width: 960px) {
     #portfolio .portfolio-flex-row .portfolio-flex-item:last-child {
-        margin-left: 34%;
-        margin-right: 34%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
