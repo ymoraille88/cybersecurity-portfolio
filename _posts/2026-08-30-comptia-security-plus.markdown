@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 7
-title: CompTIA Security+ Notes
+title: Security+ Study Lab
 img: securityplus.png
 alt: image-alt
 project-url: https://docs.google.com/document/d/1p_M1w-PL-CIeGPie7Edtii66BNFeC5ZmlnLwi_JMPhs/edit?tab=t.0
