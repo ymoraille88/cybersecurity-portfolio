@@ -637,13 +637,24 @@ footer .footer-below {
     border-radius: 4px;
 }
 
-/* Center the final Python project under Azure */
+/* Desktop portfolio grid + center final Python project */
 @media (min-width: 960px) {
+    #portfolio .portfolio-flex-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2%;
+    }
+
+    #portfolio .portfolio-flex-row .portfolio-flex-item {
+        width: 100%;
+        max-width: none;
+        flex: none;
+    }
+
     #portfolio .portfolio-flex-row .portfolio-flex-item:last-child {
-        margin-left: 34%;
-        margin-right: 34%;
-        flex: 0 0 32%;
-        max-width: 32%;
+        grid-column: 2;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
