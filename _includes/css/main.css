@@ -529,13 +529,9 @@ footer .footer-below {
     background-color: #{{ site.color.secondary-dark }};
 }
 
-.modal-view-button {
-    background-color: #{{ site.color.secondary-dark }};
-}
-
 /* Certifications Section */
 #certifications {
-    padding: 70px 0 60px;
+    padding: 45px 0 60px;
 }
 
 .certification-item {
@@ -544,11 +540,23 @@ footer .footer-below {
 
 .certification-img {
     display: block;
-    height: 260px;
     width: auto;
     max-width: 100%;
     margin: 0 auto 20px;
     object-fit: contain;
+}
+
+/* Balance individual badge sizes */
+.certification-item:nth-child(1) .certification-img {
+    height: 245px;
+}
+
+.certification-item:nth-child(2) .certification-img {
+    height: 220px;
+}
+
+.certification-item:nth-child(3) .certification-img {
+    height: 235px;
 }
 
 .certification-item h3 {
@@ -564,13 +572,29 @@ footer .footer-below {
     font-size: 16px;
 }
 
+.certification-button {
+    margin-top: 12px;
+    color: #{{ site.color.secondary-dark }};
+    border: 2px solid #{{ site.color.secondary-dark }};
+    background: transparent;
+}
+
+.certification-button:hover,
+.certification-button:focus {
+    color: #fff;
+    background: #{{ site.color.secondary-dark }};
+    border-color: #{{ site.color.secondary-dark }};
+}
+
 @media (max-width: 767px) {
     #certifications {
-        padding: 60px 0 40px;
+        padding: 45px 0 40px;
     }
 
-    .certification-img {
-        height: 220px;
+    .certification-item:nth-child(1) .certification-img,
+    .certification-item:nth-child(2) .certification-img,
+    .certification-item:nth-child(3) .certification-img {
+        height: 210px;
     }
 
     .certification-item {
