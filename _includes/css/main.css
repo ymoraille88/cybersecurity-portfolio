@@ -661,4 +661,13 @@ footer .footer-below {
     }
 }
 
+/* Final Python image size override */
+#portfolio .portfolio-flex-item img[src*="python.png"] {
+    width: 160px !important;
+    height: 160px !important;
+    max-width: 160px !important;
+    max-height: 160px !important;
+    transform: none !important;
+    margin: 0 auto 20px !important;
+}
 
