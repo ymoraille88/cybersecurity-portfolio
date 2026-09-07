@@ -19,6 +19,9 @@
           <img src="img/portfolio/{{ post.img }}" class="portfolio-image" alt="{{ post.alt }}">
         </a>
         <h3 class="text-center">{{ post.title }}</h3>
+        {% if post.coming-soon %}
+            <p class="text-center coming-soon-label">COMING SOON</p>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
