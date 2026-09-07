@@ -4,7 +4,7 @@ email: moraille.yveshenry@gmail.com
 url: https://ymoraille88.github.io/cybersecurity-portfolio
 description: "Portfolio of cybersecurity work samples for a junior-level cyber security professional."
 keywords: "cybersecurity, cyber, security, portfolio, tech"
-skills: "Cybersecurity - Analyst - Ethical Hacker"
+skills: "IT Support - Cybersecurity - Cloud"
 meta_author: Moraille Yves-Henry
 
 # Google webmaster tools
@@ -46,7 +46,7 @@ social:
 
 # Email Address (make sure to include "mailto:" before your email!)
 email:
-  email-url: mailto:moraille.yveshenry@gmail.com
+  email-url: mailto: moraille.yveshenry@gmail.com
 
 # Postal address (add as many lines as necessary)
 location:
