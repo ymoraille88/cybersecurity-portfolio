@@ -645,12 +645,17 @@ footer .footer-below {
     }
 
     /* Python image */
-    #portfolio img[src$="python.png"] {
-        width: 180px;
-        height: 180px;
-        max-width: none;
-        object-fit: contain;
-        transform: scale(2.2);
+#portfolio img[src$="python.png"] {
+    width: 180px;
+    height: 180px;
+    max-width: none;
+    object-fit: contain;
+    transform: scale(1.1);
+}
+
+/* Space between Python icon and title */
+#portfolio .portfolio-flex-row .portfolio-flex-item:last-child h3 {
+    margin-top: 20px;
     }
 
     /* Give enlarged Python icon room before its title */
