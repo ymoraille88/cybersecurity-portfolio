@@ -622,6 +622,7 @@ footer .footer-below {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2%;
+        row-gap: 50px;
     }
 
     #portfolio .portfolio-flex-row .portfolio-flex-item {
@@ -645,22 +646,18 @@ footer .footer-below {
     }
 
     /* Python image */
-#portfolio img[src$="python.png"] {
-    width: 180px;
-    height: 180px;
-    max-width: none;
-    object-fit: contain;
-    transform: scale(1.1);
-}
-
-/* Space between Python icon and title */
-#portfolio .portfolio-flex-row .portfolio-flex-item:last-child h3 {
-    margin-top: 20px;
+    #portfolio img[src$="python.png"] {
+        display: block;
+        width: 180px !important;
+        height: 180px !important;
+        max-width: 180px !important;
+        object-fit: contain;
+        transform: none !important;
+        margin: 0 auto 20px;
     }
 
-    /* Give enlarged Python icon room before its title */
     #portfolio .portfolio-flex-row .portfolio-flex-item:last-child h3 {
-        margin-top: 35px;
+        margin-top: 15px;
     }
 }
 
