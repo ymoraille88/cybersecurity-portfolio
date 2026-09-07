@@ -615,30 +615,9 @@ footer .footer-below {
     border-radius: 4px;
 }
 
-/* Center the final Python project under Azure */
+/* Desktop Portfolio Layout */
 @media (min-width: 960px) {
-    #portfolio .portfolio-flex-row .portfolio-flex-item:last-child {
-        flex: 0 0 32%;
-        max-width: 32%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-    /* Coming Soon Project Label */
-.coming-soon-label {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 5px 12px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #{{ site.color.secondary-dark }};
-    border: 2px solid #{{ site.color.secondary-dark }};
-    border-radius: 4px;
-}
 
-/* Desktop portfolio grid + center final Python project */
-@media (min-width: 960px) {
     #portfolio .portfolio-flex-row {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -651,28 +630,32 @@ footer .footer-below {
         flex: none;
     }
 
+    /* Put Python directly under Azure */
     #portfolio .portfolio-flex-row .portfolio-flex-item:last-child {
         grid-column: 2;
-        margin-left: 0;
-        margin-right: 0;
     }
 
-    /* Balance Azure and Python project images */
-#portfolio .portfolio-flex-row .portfolio-flex-item:nth-last-child(3) .portfolio-image {
-    width: 220px;
-    height: 180px;
-    object-fit: contain;
+    /* Azure image */
+    #portfolio img[src$="azure-security.png"] {
+        width: 180px;
+        height: 180px;
+        max-width: none;
+        object-fit: contain;
+        transform: scale(1.45);
     }
 
-#portfolio .portfolio-flex-row .portfolio-flex-item:last-child .portfolio-image {
-    width: 220px;
-    height: 180px;
-    object-fit: contain;
-    transform: scale(1.8);
+    /* Python image */
+    #portfolio img[src$="python.png"] {
+        width: 180px;
+        height: 180px;
+        max-width: none;
+        object-fit: contain;
+        transform: scale(2.2);
     }
 
-#portfolio .portfolio-flex-row .portfolio-flex-item:last-child h3 {
-    margin-top: 45px;
+    /* Give enlarged Python icon room before its title */
+    #portfolio .portfolio-flex-row .portfolio-flex-item:last-child h3 {
+        margin-top: 35px;
     }
 }
 
