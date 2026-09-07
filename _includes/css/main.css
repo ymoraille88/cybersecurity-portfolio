@@ -656,6 +656,24 @@ footer .footer-below {
         margin-left: 0;
         margin-right: 0;
     }
+
+    /* Balance Azure and Python project images */
+#portfolio .portfolio-flex-row .portfolio-flex-item:nth-last-child(3) .portfolio-image {
+    width: 220px;
+    height: 180px;
+    object-fit: contain;
+    }
+
+#portfolio .portfolio-flex-row .portfolio-flex-item:last-child .portfolio-image {
+    width: 220px;
+    height: 180px;
+    object-fit: contain;
+    transform: scale(1.8);
+    }
+
+#portfolio .portfolio-flex-row .portfolio-flex-item:last-child h3 {
+    margin-top: 45px;
+    }
 }
 
 
