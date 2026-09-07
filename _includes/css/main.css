@@ -613,11 +613,13 @@ footer .footer-below {
     border: 2px solid #{{ site.color.secondary-dark }};
     border-radius: 4px;
 
-/* Center the final Python project underneath Azure */
+/* Center the final Python project under Azure */
 @media (min-width: 960px) {
     #portfolio .portfolio-flex-row .portfolio-flex-item:last-child {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 34%;
+        margin-right: 34%;
+        flex: 0 0 32%;
+        max-width: 32%;
     }
 }
 
