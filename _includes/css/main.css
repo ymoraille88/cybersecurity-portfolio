@@ -528,3 +528,52 @@ footer .footer-below {
 .modal-view-button {
     background-color: #{{ site.color.secondary-dark }};
 }
+
+.modal-view-button {
+    background-color: #{{ site.color.secondary-dark }};
+}
+
+/* Certifications Section */
+#certifications {
+    padding: 70px 0 60px;
+}
+
+.certification-item {
+    margin-bottom: 30px;
+}
+
+.certification-img {
+    display: block;
+    height: 260px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    object-fit: contain;
+}
+
+.certification-item h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.certification-item p {
+    margin-bottom: 8px;
+}
+
+.certification-date {
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    #certifications {
+        padding: 60px 0 40px;
+    }
+
+    .certification-img {
+        height: 220px;
+    }
+
+    .certification-item {
+        margin-bottom: 45px;
+    }
+}
