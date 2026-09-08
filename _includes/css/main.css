@@ -677,3 +677,8 @@ footer .footer-below {
     margin: 0 auto 20px !important;
 }
 
+/* Reduce space between Portfolio and Certifications */
+#portfolio {
+    padding-bottom: 25px;
+}
+
