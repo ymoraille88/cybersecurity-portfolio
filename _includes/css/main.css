@@ -682,3 +682,63 @@ footer .footer-below {
     padding-bottom: 25px;
 }
 
+
+/* Approved About reference: navy, turquoise, and a pale skills panel. */
+.navbar.navbar-default { background:#102b40; padding:0; border:0; text-transform:none; }
+.navbar .container { width:100%; max-width:1440px; padding:0 48px; }
+.navbar .navbar-brand, .navbar.navbar-shrink .navbar-brand { height:auto; font-size:27px; line-height:1.2; padding:8px 0; color:#fff; }
+.brand-tagline { display:block; font:16px/1.5 Lato,Arial,sans-serif; margin-top:3px; }
+.navbar .navbar-nav>li>a { padding:25px 16px 18px; font:16px/1.5 Lato,Arial,sans-serif; color:#fff; border-bottom:4px solid transparent; }
+.navbar .navbar-nav>.active>a,.navbar .navbar-nav>.active>a:hover,.navbar .navbar-nav>li>a:hover { background:transparent; border-color:#00c5c1; color:#fff; }
+#about,#contact,#certifications,#portfolio { scroll-margin-top:90px; }
+#about { background:linear-gradient(110deg,#1ebbb8,#20c3bd); color:#062438; padding:26px 0; }
+#about>.container { width:100%; max-width:1440px; padding:0 30px 0 48px; }
+#about .about-layout { display:grid; grid-template-columns:1.08fr 1fr; gap:26px; }
+#about .about-story { border-right:1px solid #9fe4e1; padding:38px 25px 16px 0; }
+#about .about-eyebrow { text-transform:uppercase; font-size:14px; letter-spacing:3px; font-weight:700; margin:0 0 8px; }
+#about #about-title { font-size:68px; text-transform:none; margin:0; line-height:1.15; color:#062438; }
+#about .about-rule { width:94px; height:4px; background:#08364a; margin:19px 0 30px; }
+#about .about-story p { color:#062438; font-size:18px; line-height:1.5; margin-bottom:15px; }
+#about .about-strengths { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; padding:0; margin:58px 0 24px; list-style:none; text-align:center; }
+#about .about-strengths i { display:block; font-size:65px; height:76px; }
+#about .about-strengths span { display:block; max-width:110px; margin:auto; font-size:16px; font-weight:700; line-height:1.4; text-transform:uppercase; }
+#about .resume-button { border:1px solid #075266; color:#062438; font-size:15px; padding:8px 20px; margin:0; }
+#about .resume-button:hover { background:#102b40; color:#fff; }
+#about .about-skills { min-width:0; background:rgba(244,255,255,.79); border:1px solid #b2eeee; border-radius:11px; padding:23px 24px; }
+#about .about-skills h3 { color:#062438; font:700 30px/1.3 Lato,Arial,sans-serif; margin:0 5px 15px; }
+#about .about-skills h3:after { content:""; display:block; width:78px; height:4px; background:#00b8b0; margin-top:12px; }
+#about .about-skills dl { margin:0; }
+#about .skill-row { position:relative; padding:17px 0 17px 102px; min-height:104px; border-bottom:1px solid #78bdc2; }
+#about .skill-row:first-child { padding-top:3px; min-height:90px; }
+#about .skill-row:last-child { border:0; padding-bottom:0; }
+#about .skill-row dt { font:700 21px/1.3 Lato,Arial,sans-serif; color:#08263e; margin-bottom:3px; }
+#about .skill-row dd { font-size:17px; line-height:1.4; color:#153547; }
+#about .skill-icon { position:absolute; left:4px; top:20px; width:74px; height:74px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#007fab; color:#f5ffff; font-size:36px; }
+#about .skill-row:first-child .skill-icon { top:0; background:#00515a; }
+#about .skill-row:nth-child(3) .skill-icon,#about .skill-row:nth-child(6) .skill-icon { background:#00a392; }
+#about .skill-row:nth-child(5) .skill-icon { background:#092d46; }
+.portfolio-footer { background:#091e2e; padding:38px 0 22px; color:#f5f7fb; }
+.portfolio-footer .footer-content { position:relative; width:100%; max-width:1440px; padding:0 30px; }
+.portfolio-footer .footer-message h2 { color:#f5f7fb; font:700 34px/1.3 Lato,Arial,sans-serif; text-transform:none; margin:0; }
+.portfolio-footer .footer-message p { color:#c2d9e4; font-size:20px; margin:15px 0 20px; }
+.footer-rule { width:94px; height:3px; margin:0 auto; background:#00c9c3; }
+.footer-social { margin:34px 0 20px; }
+.portfolio-footer .btn-social { border:0; border-radius:0; width:38px; height:38px; font-size:28px; line-height:38px; color:#c9dee9; }
+.portfolio-footer .btn-social:hover { background:transparent; color:#00c9c3; }
+.portfolio-footer .footer-copyright { color:#e0e9ee; font-size:14px; margin:0; }
+.footer-quote { position:absolute; right:24px; bottom:8px; width:285px; }
+.footer-mountain { display:block; font-size:90px; transform:scaleX(1.7); color:#263f51; opacity:.65; margin-bottom:8px; }
+.footer-quote blockquote { border:0; padding:0; margin:0; font:italic 400 18px/1.45 Georgia,serif; }
+.footer-quote .footer-rule { width:49px; height:2px; margin:17px auto; }
+.footer-quote p { font-size:11px; color:#e4edf3; text-transform:uppercase; letter-spacing:1.2px; }
+.footer-credits { text-align:left; font-size:12px; color:#adc4d0; margin-top:16px; }
+.footer-credits summary { cursor:pointer; }
+.footer-credits p { font-size:12px; color:#adc4d0; }
+#about a:focus-visible,.portfolio-footer a:focus-visible,.navbar a:focus-visible { outline:3px solid currentColor; outline-offset:4px; }
+@media(min-width:1440px) { #about .about-story p { font-size:20px; } #about .skill-row dd { font-size:19px; } }
+@media(max-width:1100px) { .navbar .container { padding:0 24px; } .navbar .navbar-brand,.navbar.navbar-shrink .navbar-brand { font-size:22px; } .navbar .navbar-nav>li>a { padding-left:10px; padding-right:10px; } .footer-quote { position:static; margin:28px auto 0; } }
+@media(max-width:991px) { #about>.container { padding:0 28px; } #about .about-layout { grid-template-columns:1fr; gap:28px; } #about .about-story { border-right:0; border-bottom:1px solid #9fe4e1; padding:20px 0 28px; } #about .about-strengths { margin-top:32px; } #about .about-skills { padding:26px; } }
+@media(max-width:767px) { .navbar .navbar-brand,.navbar.navbar-shrink .navbar-brand { font-size:20px; padding:10px 0; max-width:calc(100% - 60px); } .brand-tagline { font-size:13px; } .navbar-toggle { margin-right:0; margin-top:16px; } .navbar .navbar-nav>li>a { padding:12px; } .navbar-collapse { max-height:75vh; } #about #about-title { font-size:54px; } .portfolio-footer .footer-message h2 { font-size:28px; } }
+@media(max-width:479px) { #about>.container { padding:0 20px; } #about .about-strengths { grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 16px; } #about .about-story p { font-size:17px; } #about .about-skills { padding:20px 16px; } #about .about-skills h3 { font-size:25px; } #about .skill-row { padding-left:66px; } #about .skill-icon { left:0; width:50px; height:50px; font-size:25px; } #about .skill-row dt { font-size:18px; } #about .skill-row dd { font-size:16px; overflow-wrap:anywhere; } .footer-quote { width:100%; max-width:285px; } }
+
+#about .about-heading .about-eyebrow { font-size:14px; margin-bottom:8px; }
