@@ -1,4 +1,31 @@
 # Completed practice sets only. Add each completed attempt once; running scores are not separate attempts.
+- id: "network-ipv4"
+  date: "2026-08-09"
+  start: "2026-08-08"
+  label: "Networking foundations & IPv4"
+  track: "Networking foundation"
+  correct: 16
+  questions: 22
+  focus: "DNS vs. TCP; DHCP vs. ARP; IP/MAC layers; IPv4 bits and host addresses."
+  note: "22 numbered prompts; the three-part matching prompt counts as one all-correct item."
+- id: "network-ipv6"
+  date: "2026-08-12"
+  start: "2026-08-11"
+  label: "IPv6, OSI & network troubleshooting"
+  track: "Networking foundation"
+  correct: 18
+  questions: 20
+  focus: "IPv6 /64 prefixes and loopback; reinforced through follow-up questions."
+  note: "20 completed questions, not a perfect score; two initial answers were incorrect."
+- id: "security-domain1"
+  date: "2026-08-15"
+  start: "2026-08-12"
+  label: "Security+ Domain 1 — general concepts"
+  track: "Security+"
+  correct: 18
+  questions: 20
+  focus: "Change management and risk acceptance vs. avoidance."
+  note: "20 completed questions; questions 10 and 11 were incorrect."
 - id: "fundamentals-2026-09-06"
   date: "2026-09-06"
   label: "IT security fundamentals & authentication"
