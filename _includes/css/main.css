@@ -805,3 +805,14 @@ footer .footer-below {
 
 .study-layout::before,.study-layout::after { display:none; }
 @media(max-width:480px) { #certifications h2 { font-size:clamp(24px,8vw,40px); } }
+.study-history-table { overflow-x:auto; margin:0 0 16px; }
+.study-history-table table { width:100%; border-collapse:collapse; font-size:16px; line-height:1.45; }
+.study-history-table caption { text-align:left; font-size:14px; color:#48616f; padding:0 0 12px; }
+.study-history-table th,.study-history-table td { padding:14px 10px; text-align:left; vertical-align:top; border-bottom:1px solid #dce6eb; }
+.study-history-table thead,.study-history-table tfoot { background:#eef8f7; }
+.study-history-table tbody th { font-weight:400; }
+.study-history-table td:first-child,.study-history-table td:last-child { white-space:nowrap; }
+.study-history-table tfoot { font-weight:700; }
+.study-history-table:focus-visible { outline:3px solid #00a9a5; outline-offset:3px; }
+@media(max-width:480px) { .study-history-table table { font-size:14px; } .study-history-table th,.study-history-table td { padding:12px 6px; } }
+.study-panel h2 { scroll-margin-top:110px; }
