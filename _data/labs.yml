@@ -1,0 +1,33 @@
+# Keyed by each existing project's modal-id; keep the original grid order and titles.
+'7':
+  summary: Security+ (SY0-701) practice questions, notes, and review.
+  detail-page: security-plus.html
+'1':
+  summary: Security controls, compliance, risks, and recommendations.
+'2':
+  summary: DDoS incident analysis, response, and recovery planning.
+'3':
+  summary: SQL joins and queries to filter and analyze data.
+'4':
+  summary: Database vulnerabilities, risks, and remediation planning.
+'6':
+  summary: Hands-on TryHackMe labs, notes, and lessons learned.
+'5':
+  summary: Ongoing notes on incident investigation and response.
+'10':
+  summary: Planned Azure labs in identity, access, and monitoring.
+'8':
+  summary: Planned Linux hardening, permissions, SSH, and auditing.
+'9':
+  summary: Planned Python log analysis and security automation.
+
+# Record individual results, never infer an overall average or completion percentage.
+security-plus:
+  latest-review:
+    label: Additional review
+    correct: 4
+    questions: 5
+    percent: 80
+    reinforcement: Brute force vs. password spraying
+  overall-progress: Not yet tracked
+  exam-date: To be confirmed
