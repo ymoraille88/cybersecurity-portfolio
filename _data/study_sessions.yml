@@ -1,0 +1,36 @@
+# Completed practice sets only. Add each completed attempt once; running scores are not separate attempts.
+- id: "fundamentals-2026-09-06"
+  date: "2026-09-06"
+  label: "IT security fundamentals & authentication"
+  correct: 7
+  questions: 10
+  focus: "Replay vs. credential stuffing; encryption vs. hashing."
+  note: "Includes the accepted correction of a mistyped answer."
+- id: "threats-2026-09-06"
+  date: "2026-09-06"
+  label: "Threats & social engineering"
+  correct: 8
+  questions: 10
+  focus: "Pretexting and typosquatting."
+  note: "Originally labeled Section 3; mapped to the Threats topic."
+- id: "vulnerabilities-2026-09-06"
+  date: "2026-09-06"
+  label: "Vulnerabilities"
+  correct: 10
+  questions: 10
+  focus: "All ten scenarios answered correctly in this set."
+  note: "Originally labeled Section 4; mapped to Vulnerabilities."
+- id: "controls-2026-09-06"
+  date: "2026-09-06"
+  label: "Security control categories & types"
+  correct: 8
+  questions: 10
+  focus: "Operational controls; deterrent vs. preventive controls."
+  note: "Course Section 3, after correcting the earlier topic labels."
+- id: "review-2026-09-09"
+  date: "2026-09-09"
+  label: "Additional mixed review"
+  correct: 4
+  questions: 5
+  focus: "Brute force vs. password spraying."
+  note: "Additional review of authentication and social engineering."
