@@ -9,8 +9,10 @@
     </div>
     <div class="portfolio-flex-row">
       {% for post in site.posts %}
+      {% assign lab_id = post.modal-id | append: '' %}
+      {% assign lab = site.data.labs[lab_id] %}
       <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+        <a href="{% if lab.detail-page %}{{ lab.detail-page }}{% else %}#portfolioModal-{{ post.modal-id }}{% endif %}" class="portfolio-link" {% unless lab.detail-page %}data-toggle="modal"{% endunless %} aria-label="Open {{ post.title | escape }}">
           <div class="caption">
             <div class="caption-content">
               <i class="fa fa-search-plus fa-3x"></i>
@@ -19,6 +21,7 @@
           <img src="img/portfolio/{{ post.img }}" class="portfolio-image" alt="{{ post.alt }}">
         </a>
         <h3 class="text-center">{{ post.title }}</h3>
+        {% if lab.summary %}<p class="lab-summary">{{ lab.summary }}</p>{% endif %}
         {% if post.coming-soon %}
             <p class="text-center coming-soon-label">COMING SOON</p>
         {% endif %}
