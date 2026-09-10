@@ -1,0 +1,122 @@
+---
+layout: null
+title: CompTIA Security+ (SY0-701) Study Lab
+permalink: /security-plus.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="Yves-Henry's Security+ study journey: practice results, targeted review, and sample notes for CompTIA SY0-701.">
+  <link rel="canonical" href="{{ site.url }}/security-plus.html">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:400,700,400italic" rel="stylesheet">
+</head>
+<body id="page-top" class="study-page">
+  <a class="study-skip" href="#study-main">Skip to study lab</a>
+  {% capture study_navigation %}{% include nav.html %}{% endcapture %}
+  {{ study_navigation | replace: 'href="#', 'href="index.html#' }}
+  {% assign study = site.data.labs.security-plus %}
+  {% assign review = study.latest-review %}
+  <main id="study-main">
+    <header class="study-hero">
+      <div class="container">
+        <a class="study-back" href="index.html#portfolio">← Back to Portfolio</a>
+        <div class="study-hero-content">
+          <img src="img/portfolio/securityplus.png" width="144" height="144" alt="" class="study-icon">
+          <div>
+            <h1>{{ page.title }}</h1>
+            <p>My study journey through practice questions, structured notes, and targeted review.</p>
+            <span class="study-status">In Progress</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container study-layout">
+      <div class="study-primary">
+        <section class="study-panel" aria-labelledby="overview-title">
+          <h2 id="overview-title">Project Overview</h2>
+          <p>This ongoing lab documents my preparation for the CompTIA Security+ (SY0-701) certification. I use scenario-based practice questions, record explanations in my notes, and revisit concepts that need reinforcement.</p>
+          <p>The focus is understanding why an answer is correct and applying that reasoning to security scenarios.</p>
+        </section>
+        <section class="study-panel" aria-labelledby="goals-title">
+          <h2 id="goals-title">Goals</h2>
+          <ul class="study-goals">
+            <li>Build a strong understanding of all five SY0-701 domains.</li>
+            <li>Work toward consistent scores of 80% or higher on practice exams.</li>
+            <li>Apply security concepts to scenario-based questions.</li>
+            <li>Identify weak areas and reinforce them through targeted review.</li>
+            <li>Earn the CompTIA Security+ certification.</li>
+          </ul>
+        </section>
+        <section class="study-panel" aria-labelledby="progress-title">
+          <h2 id="progress-title">Study Progress</h2>
+          <dl class="study-metrics">
+            <div class="study-result"><dt>Latest additional review</dt><dd>{{ review.correct }}/{{ review.questions }} <span>({{ review.percent }}%)</span></dd></div>
+            <div><dt>Overall completion</dt><dd>{{ study.overall-progress }}</dd></div>
+            <div><dt>Exam date</dt><dd>{{ study.exam-date }}</dd></div>
+          </dl>
+          <p class="study-context">This score represents one five-question review, not a full practice exam or an overall average.</p>
+          <div class="study-reinforcement"><h3>Next reinforcement topic</h3><p>{{ review.reinforcement }}</p></div>
+        </section>
+        <section class="study-panel" aria-labelledby="practice-title">
+          <h2 id="practice-title">Recent Practice Questions</h2>
+          <p><strong>{{ review.label }}: {{ review.correct }}/{{ review.questions }} correct ({{ review.percent }}%).</strong> The examples below come from my shared study notes.</p>
+          <div class="study-question">
+            <h3>Stolen password, blocked sign-in</h3>
+            <p>An attacker has a user's password, but remote access is denied because an additional verification method is required. Which control prevented access?</p>
+            <details><summary>Answer and explanation</summary><p><strong>Multifactor authentication.</strong> It requires another factor beyond the stolen password.</p></details>
+          </div>
+          <div class="study-question">
+            <h3>A targeted gift-card request</h3>
+            <p>An attacker researches a CEO and emails a specific employee, impersonating the CEO and requesting gift cards. What type of attack is this?</p>
+            <details><summary>Answer and explanation</summary><p><strong>Spear phishing.</strong> This is a targeted phishing attack aimed at a specific person or organization.</p></details>
+          </div>
+          <div class="study-question">
+            <h3>Many passwords, one account</h3>
+            <p>Hundreds of login attempts use different common passwords against the same username. Which attack does this describe?</p>
+            <details><summary>Answer and explanation</summary><p><strong>Brute-force attack.</strong> Many passwords are tried against one account. Password spraying instead tries one or a few common passwords across many accounts.</p></details>
+          </div>
+        </section>
+        <section class="study-panel" aria-labelledby="notes-title">
+          <h2 id="notes-title">Sample Notes</h2>
+          <p>Excerpts transcribed from my Security+ practice notes. I record the correct answer and a short explanation, highlighting concepts to remember.</p>
+          <div class="study-notes">
+            <p><strong>Multifactor authentication</strong><br><mark>Requires another factor beyond the stolen password.</mark></p>
+            <p><strong>Spear phishing</strong><br><mark>A targeted phishing attack aimed at a specific person or organization.</mark></p>
+            <p><strong>Brute-force attack</strong><br><mark>Tries many different passwords against one account until one works.</mark></p>
+          </div>
+          <p class="study-context">Source: my Google Docs practice notes screenshot shared September 9, 2026.</p>
+        </section>
+      </div>
+      <aside class="study-sidebar" aria-label="Study scope and resources">
+        <section class="study-panel" aria-labelledby="domains-title">
+          <h2 id="domains-title">Domains Covered</h2>
+          <p>Study scope for SY0-701; completion by domain is not yet tracked.</p>
+          <ol class="study-domains">
+            <li>General Security Concepts</li>
+            <li>Threats, Vulnerabilities, and Mitigations</li>
+            <li>Security Architecture</li>
+            <li>Security Operations</li>
+            <li>Security Program Management and Oversight</li>
+          </ol>
+        </section>
+        <section class="study-panel" aria-labelledby="tools-title">
+          <h2 id="tools-title">Tools &amp; Resources</h2>
+          <ul class="study-resources">
+            <li><a href="https://docs.google.com/document/d/1p_M1w-PL-CIeGPie7Edtii66BNFeC5ZmlnLwi_JMPhs/edit?tab=t.0">Google Docs study notes</a><span>My existing Security+ notes document.</span></li>
+            <li><strong>ChatGPT</strong><span>Scenario practice, answer explanations, and targeted review.</span></li>
+            <li><strong>Practice questions</strong><span>Short review sets and documented takeaways.</span></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+  {% include footer.html %}
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
