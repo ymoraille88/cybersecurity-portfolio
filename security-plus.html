@@ -21,6 +21,13 @@ permalink: /security-plus.html
   {{ study_navigation | replace: 'href="#', 'href="index.html#' }}
   {% assign study = site.data.labs.security-plus %}
   {% assign review = study.latest-review %}
+  {% assign sessions = site.data.study_sessions %}
+  {% assign total_correct = 0 %}
+  {% assign total_questions = 0 %}
+  {% for session in sessions %}
+    {% assign total_correct = total_correct | plus: session.correct %}
+    {% assign total_questions = total_questions | plus: session.questions %}
+  {% endfor %}
   <main id="study-main">
     <header class="study-hero">
       <div class="container">
@@ -55,12 +62,38 @@ permalink: /security-plus.html
         <section class="study-panel" aria-labelledby="progress-title">
           <h2 id="progress-title">Study Progress</h2>
           <dl class="study-metrics">
-            <div class="study-result"><dt>Latest additional review</dt><dd>{{ review.correct }}/{{ review.questions }} <span>({{ review.percent }}%)</span></dd></div>
-            <div><dt>Overall completion</dt><dd>{{ study.overall-progress }}</dd></div>
-            <div><dt>Exam date</dt><dd>{{ study.exam-date }}</dd></div>
+            <div class="study-result"><dt>Combined practice accuracy</dt><dd>{{ total_correct | times: 100.0 | divided_by: total_questions | round: 1 }}%<span>{{ total_correct }}/{{ total_questions }} correct</span></dd></div>
+            <div><dt>Completed practice sets</dt><dd>{{ sessions.size }}</dd></div>
+            <div><dt>Questions answered</dt><dd>{{ total_questions }}</dd></div>
           </dl>
-          <p class="study-context">This score represents one five-question review, not a full practice exam or an overall average.</p>
+          <p class="study-context">Combined results from the completed practice sets recovered from my study conversations. Accuracy is total correct answers divided by total questions; each completed attempt is counted once. These are guided practice sets, not full-length mock exams or a measure of course completion.</p>
+          <p class="study-context">Overall completion: {{ study.overall-progress | downcase }}. Exam date: {{ study.exam-date | downcase }}.</p>
           <div class="study-reinforcement"><h3>Next reinforcement topic</h3><p>{{ review.reinforcement }}</p></div>
+        </section>
+        <section class="study-panel" aria-labelledby="history-title">
+          <h2 id="history-title">Practice History</h2>
+          <p>All {{ sessions.size }} confirmed sets, organized by topic. Earlier course-section labels have been corrected without counting any set twice.</p>
+          <div class="study-history-table" role="region" aria-label="Practice results table" tabindex="0">
+            <table>
+              <caption>Completed practice sets — {{ sessions.first.date | date: '%b %-d, %Y' }} to {{ sessions.last.date | date: '%b %-d, %Y' }}</caption>
+              <thead><tr><th scope="col">Date</th><th scope="col">Practice set</th><th scope="col">Result</th></tr></thead>
+              <tbody>
+                {% for session in sessions %}
+                <tr><td><time datetime="{{ session.date }}">{{ session.date | date: '%b %-d' }}</time></td><th scope="row">{{ session.label }}</th><td>{{ session.correct }}/{{ session.questions }}<br><span>{{ session.correct | times: 100.0 | divided_by: session.questions | round }}%</span></td></tr>
+                {% endfor %}
+              </tbody>
+              <tfoot><tr><th scope="row" colspan="2">Combined</th><td>{{ total_correct }}/{{ total_questions }}<br>{{ total_correct | times: 100.0 | divided_by: total_questions | round: 1 }}%</td></tr></tfoot>
+            </table>
+          </div>
+          <p class="study-context">The fundamentals result includes the correction of a mistyped answer accepted during that session. Unanswered prompts and repeated score summaries are excluded.</p>
+          <h3>Topics to reinforce</h3>
+          <ul class="study-goals">
+            <li>Replay attacks vs. credential stuffing.</li>
+            <li>Encryption vs. hashing and hash values.</li>
+            <li>Pretexting and typosquatting.</li>
+            <li>Security control categories; deterrent vs. preventive controls.</li>
+            <li>Brute force vs. password spraying.</li>
+          </ul>
         </section>
         <section class="study-panel" aria-labelledby="practice-title">
           <h2 id="practice-title">Recent Practice Questions</h2>
