@@ -24,9 +24,20 @@ permalink: /security-plus.html
   {% assign sessions = site.data.study_sessions %}
   {% assign total_correct = 0 %}
   {% assign total_questions = 0 %}
+  {% assign security_correct = 0 %}
+  {% assign security_questions = 0 %}
+  {% assign network_correct = 0 %}
+  {% assign network_questions = 0 %}
   {% for session in sessions %}
     {% assign total_correct = total_correct | plus: session.correct %}
     {% assign total_questions = total_questions | plus: session.questions %}
+    {% if session.track == 'Networking foundation' %}
+      {% assign network_correct = network_correct | plus: session.correct %}
+      {% assign network_questions = network_questions | plus: session.questions %}
+    {% else %}
+      {% assign security_correct = security_correct | plus: session.correct %}
+      {% assign security_questions = security_questions | plus: session.questions %}
+    {% endif %}
   {% endfor %}
   <main id="study-main">
     <header class="study-hero">
@@ -36,7 +47,7 @@ permalink: /security-plus.html
           <img src="img/portfolio/securityplus.png" width="144" height="144" alt="" class="study-icon">
           <div>
             <h1>{{ page.title }}</h1>
-            <p>My study journey through practice questions, structured notes, and targeted review.</p>
+            <p>Documented practice from August 8 to September 9, 2026 — building foundations, explaining answers, and reviewing mistakes.</p>
             <span class="study-status">In Progress</span>
           </div>
         </div>
@@ -62,37 +73,56 @@ permalink: /security-plus.html
         <section class="study-panel" aria-labelledby="progress-title">
           <h2 id="progress-title">Study Progress</h2>
           <dl class="study-metrics">
-            <div class="study-result"><dt>Combined practice accuracy</dt><dd>{{ total_correct | times: 100.0 | divided_by: total_questions | round: 1 }}%<span>{{ total_correct }}/{{ total_questions }} correct</span></dd></div>
+            <div class="study-result"><dt>Combined guided accuracy</dt><dd>{{ total_correct | times: 100.0 | divided_by: total_questions | round: 1 }}%<span>{{ total_correct }}/{{ total_questions }} correct</span></dd></div>
             <div><dt>Completed practice sets</dt><dd>{{ sessions.size }}</dd></div>
             <div><dt>Questions answered</dt><dd>{{ total_questions }}</dd></div>
           </dl>
+          <p><strong>9 documented practice days through September 9, 2026.</strong> Security+ practice: <strong>{{ security_correct }}/{{ security_questions }} correct ({{ security_correct | times: 100.0 | divided_by: security_questions | round: 1 }}%)</strong>. Supporting networking practice: <strong>{{ network_correct }}/{{ network_questions }} correct ({{ network_correct | times: 100.0 | divided_by: network_questions | round: 1 }}%)</strong>.</p>
           <p class="study-context">Combined results from the completed practice sets recovered from my study conversations. Accuracy is total correct answers divided by total questions; each completed attempt is counted once. These are guided practice sets, not full-length mock exams or a measure of course completion.</p>
           <p class="study-context">Overall completion: {{ study.overall-progress | downcase }}. Exam date: {{ study.exam-date | downcase }}.</p>
           <div class="study-reinforcement"><h3>Next reinforcement topic</h3><p>{{ review.reinforcement }}</p></div>
         </section>
         <section class="study-panel" aria-labelledby="history-title">
           <h2 id="history-title">Practice History</h2>
-          <p>All {{ sessions.size }} confirmed sets, organized by topic. Earlier course-section labels have been corrected without counting any set twice.</p>
+          <p>The recovered record includes the earlier 20-question study format, a 22-question networking block, and the later shorter Security+ reviews. Networking foundations are identified separately. This is the verified history recovered so far; unlocated records are not included.</p>
           <div class="study-history-table" role="region" aria-label="Practice results table" tabindex="0">
             <table>
-              <caption>Completed practice sets — {{ sessions.first.date | date: '%b %-d, %Y' }} to {{ sessions.last.date | date: '%b %-d, %Y' }}</caption>
+              <caption>Completed practice sets — {{ sessions.first.start | date: '%b %-d, %Y' }} to {{ sessions.last.date | date: '%b %-d, %Y' }}</caption>
               <thead><tr><th scope="col">Date</th><th scope="col">Practice set</th><th scope="col">Result</th></tr></thead>
               <tbody>
                 {% for session in sessions %}
-                <tr><td><time datetime="{{ session.date }}">{{ session.date | date: '%b %-d' }}</time></td><th scope="row">{{ session.label }}</th><td>{{ session.correct }}/{{ session.questions }}<br><span>{{ session.correct | times: 100.0 | divided_by: session.questions | round }}%</span></td></tr>
+                <tr><td>{% if session.start %}<time datetime="{{ session.start }}">{{ session.start | date: '%b %-d' }}</time>–<br>{% endif %}<time datetime="{{ session.date }}">{{ session.date | date: '%b %-d' }}</time></td><th scope="row">{{ session.label }}<br><small>{{ session.track | default: 'Security+' }}</small></th><td>{{ session.correct }}/{{ session.questions }}<br><span>{{ session.correct | times: 100.0 | divided_by: session.questions | round }}%</span></td></tr>
                 {% endfor %}
               </tbody>
               <tfoot><tr><th scope="row" colspan="2">Combined</th><td>{{ total_correct }}/{{ total_questions }}<br>{{ total_correct | times: 100.0 | divided_by: total_questions | round: 1 }}%</td></tr></tfoot>
             </table>
           </div>
-          <p class="study-context">The fundamentals result includes the correction of a mistyped answer accepted during that session. Unanswered prompts and repeated score summaries are excluded.</p>
+          <p class="study-context">Each numbered prompt counts once; the three-part subnet matching exercise counts as one item. The September fundamentals result includes an accepted correction of a mistyped answer. Repeated prompts, unanswered questions, and running-score summaries are excluded. “20/20 complete” in the original discussions described completion; the two August 20-question sets each scored 18/20. Guided questions sometimes included hints and immediate review, so these results are not timed exam scores.</p>
+          <p><a href="study-practice-record.csv" download>Download the complete verified question log (CSV)</a> — dates, topics, and results for all 107 prompts.</p>
           <h3>Topics to reinforce</h3>
           <ul class="study-goals">
+            <li>DNS, DHCP, ARP, and the IP/MAC distinction.</li>
+            <li>IPv4 host addresses; IPv6 prefixes and loopback.</li>
+            <li>Change management; risk acceptance vs. avoidance.</li>
             <li>Replay attacks vs. credential stuffing.</li>
             <li>Encryption vs. hashing and hash values.</li>
             <li>Pretexting and typosquatting.</li>
             <li>Security control categories; deterrent vs. preventive controls.</li>
             <li>Brute force vs. password spraying.</li>
+          </ul>
+        </section>
+        <section class="study-panel" aria-labelledby="timeline-title">
+          <h2 id="timeline-title">Study Timeline</h2>
+          <p>Planning, answered practice, and notes show how my preparation has developed. Dates identify recorded activity, not continuous study hours.</p>
+          <ul class="study-goals">
+            <li><strong>July 14–18, 2026 · Planning:</strong> compared certification priorities, requested a Security+ study schedule, and planned a review of my cybersecurity training.</li>
+            <li><strong>August 2–3 · Planning &amp; documentation:</strong> revisited exam preparation alongside Linux, Python, Splunk, and Wireshark, and planned a portfolio section for Security+ notes.</li>
+            <li><strong>August 8–9 · Answered practice:</strong> worked through 22 networking prompts covering DNS, DHCP, ARP, routing, gateways, and IPv4 subnetting.</li>
+            <li><strong>August 11–12 · Answered practice:</strong> completed 20 IPv6, OSI, and troubleshooting questions; followed with a networking review passage.</li>
+            <li><strong>August 12–15 · Answered practice:</strong> completed 20 Security+ general-concept questions covering CIA, AAA, MFA, access principles, change management, risk responses, signatures, Zero Trust, and honeypots.</li>
+            <li><strong>August 27 · Course selection:</strong> established Andrew Ramdayal’s Udemy SY0-701 course as my main course, with a study guide and targeted practice for reinforcement.</li>
+            <li><strong>September 6 · Answered practice:</strong> completed four 10-question sets on fundamentals, threats, vulnerabilities, and control categories/types.</li>
+            <li><strong>September 9 · Review &amp; notes:</strong> completed an additional 4/5 mixed review and shared practice notes; identified brute force vs. password spraying for reinforcement.</li>
           </ul>
         </section>
         <section class="study-panel" aria-labelledby="practice-title">
@@ -123,6 +153,7 @@ permalink: /security-plus.html
             <p><strong>Brute-force attack</strong><br><mark>Tries many different passwords against one account until one works.</mark></p>
           </div>
           <p class="study-context">Source: my Google Docs practice notes screenshot shared September 9, 2026.</p>
+          <p>My separate course-notes document contains material for Sections 2–5: IT Security Fundamentals, Security Controls Categories and Types, Threats, and Vulnerabilities. These notes provide additional study evidence; they are not counted as extra practice answers.</p>
         </section>
       </div>
       <aside class="study-sidebar" aria-label="Study scope and resources">
@@ -142,7 +173,8 @@ permalink: /security-plus.html
           <ul class="study-resources">
             <li><a href="https://docs.google.com/document/d/1p_M1w-PL-CIeGPie7Edtii66BNFeC5ZmlnLwi_JMPhs/edit?tab=t.0">Google Docs study notes</a><span>My existing Security+ notes document.</span></li>
             <li><strong>ChatGPT</strong><span>Scenario practice, answer explanations, and targeted review.</span></li>
-            <li><strong>Practice questions</strong><span>Short review sets and documented takeaways.</span></li>
+            <li><strong>Andrew Ramdayal · Udemy</strong><span>Main SY0-701 course, supported by my study guide and targeted Professor Messer lessons.</span></li>
+            <li><strong>Practice questions</strong><span>20-question blocks, shorter reviews, and documented takeaways.</span></li>
           </ul>
         </section>
       </aside>

@@ -1,0 +1,108 @@
+Date (America/New_York),Practice set,Track,Question,Topic,Result
+2026-08-08,network-ipv4,Networking foundation,1,DNS,Incorrect
+2026-08-08,network-ipv4,Networking foundation,2,DNS troubleshooting,Correct
+2026-08-08,network-ipv4,Networking foundation,3,DHCP,Incorrect
+2026-08-08,network-ipv4,Networking foundation,4,DHCP reinforcement,Correct
+2026-08-08,network-ipv4,Networking foundation,5,ARP,Correct
+2026-08-08,network-ipv4,Networking foundation,6,IP and MAC OSI layers,Incorrect
+2026-08-09,network-ipv4,Networking foundation,7,Switching,Correct
+2026-08-09,network-ipv4,Networking foundation,8,Routing,Correct
+2026-08-09,network-ipv4,Networking foundation,9,Default gateway,Correct
+2026-08-09,network-ipv4,Networking foundation,10,Missing gateway,Correct
+2026-08-09,network-ipv4,Networking foundation,11,Local vs remote subnet,Correct
+2026-08-09,network-ipv4,Networking foundation,12,IPv4 /24,Correct
+2026-08-09,network-ipv4,Networking foundation,13,IPv4 multiple hosts,Correct
+2026-08-09,network-ipv4,Networking foundation,14,IPv4 bit length,Incorrect
+2026-08-09,network-ipv4,Networking foundation,15,Host bits,Correct
+2026-08-09,network-ipv4,Networking foundation,16,Subnet masks,Correct
+2026-08-09,network-ipv4,Networking foundation,17,IPv4 /16,Correct
+2026-08-09,network-ipv4,Networking foundation,18,IPv4 /8,Correct
+2026-08-09,network-ipv4,Networking foundation,19,Three subnet matches,Correct
+2026-08-09,network-ipv4,Networking foundation,20,Network address,Incorrect
+2026-08-09,network-ipv4,Networking foundation,21,Broadcast address,Correct
+2026-08-09,network-ipv4,Networking foundation,22,Valid host address,Incorrect
+2026-08-11,network-ipv6,Networking foundation,1,IPv6 /64 subnet,Incorrect
+2026-08-11,network-ipv6,Networking foundation,2,IPv6 subnet reinforcement,Correct
+2026-08-11,network-ipv6,Networking foundation,3,NDP vs ARP,Correct
+2026-08-11,network-ipv6,Networking foundation,4,IPv6 compression,Correct
+2026-08-11,network-ipv6,Networking foundation,5,IPv6 expansion,Correct
+2026-08-11,network-ipv6,Networking foundation,6,IPv6 loopback,Incorrect
+2026-08-11,network-ipv6,Networking foundation,7,Loopback test,Correct
+2026-08-11,network-ipv6,Networking foundation,8,Link-local address,Correct
+2026-08-11,network-ipv6,Networking foundation,9,Link-local scope,Correct
+2026-08-11,network-ipv6,Networking foundation,10,Global unicast example,Correct
+2026-08-11,network-ipv6,Networking foundation,11,Unicast,Correct
+2026-08-11,network-ipv6,Networking foundation,12,Multicast,Correct
+2026-08-11,network-ipv6,Networking foundation,13,IPv6 troubleshooting,Correct
+2026-08-11,network-ipv6,Networking foundation,14,Routing OSI layer,Correct
+2026-08-11,network-ipv6,Networking foundation,15,TCP/UDP OSI layer,Correct
+2026-08-12,network-ipv6,Networking foundation,16,Blocked TCP 443,Correct
+2026-08-12,network-ipv6,Networking foundation,17,Physical OSI layer,Correct
+2026-08-12,network-ipv6,Networking foundation,18,Switch OSI layer,Correct
+2026-08-12,network-ipv6,Networking foundation,19,Gateway OSI layer,Correct
+2026-08-12,network-ipv6,Networking foundation,20,DNS troubleshooting,Correct
+2026-08-12,security-domain1,Security+,1,Confidentiality,Correct
+2026-08-13,security-domain1,Security+,2,Integrity,Correct
+2026-08-13,security-domain1,Security+,3,Availability,Correct
+2026-08-13,security-domain1,Security+,4,Authentication vs authorization,Correct
+2026-08-13,security-domain1,Security+,5,Accounting,Correct
+2026-08-13,security-domain1,Security+,6,MFA,Correct
+2026-08-13,security-domain1,Security+,7,MFA factor categories,Correct
+2026-08-13,security-domain1,Security+,8,Least privilege,Correct
+2026-08-13,security-domain1,Security+,9,Separation of duties,Correct
+2026-08-14,security-domain1,Security+,10,Change management,Incorrect
+2026-08-14,security-domain1,Security+,11,Risk acceptance,Incorrect
+2026-08-14,security-domain1,Security+,12,Risk transfer,Correct
+2026-08-14,security-domain1,Security+,13,Risk mitigation,Correct
+2026-08-15,security-domain1,Security+,14,Risk avoidance,Correct
+2026-08-15,security-domain1,Security+,15,Privileged accounts,Correct
+2026-08-15,security-domain1,Security+,16,Dual approval,Correct
+2026-08-15,security-domain1,Security+,17,Non-repudiation,Correct
+2026-08-15,security-domain1,Security+,18,Digital signature integrity,Correct
+2026-08-15,security-domain1,Security+,19,Zero Trust,Correct
+2026-08-15,security-domain1,Security+,20,Honeypot,Correct
+2026-09-06,fundamentals-2026-09-06,Security+,1,Least privilege,Correct
+2026-09-06,fundamentals-2026-09-06,Security+,2,On-path attack,Correct
+2026-09-06,fundamentals-2026-09-06,Security+,3,Replay attack,Incorrect
+2026-09-06,fundamentals-2026-09-06,Security+,4,Credential stuffing,Correct
+2026-09-06,fundamentals-2026-09-06,Security+,5,Password spraying,Correct
+2026-09-06,fundamentals-2026-09-06,Security+,6,Encryption,Correct
+2026-09-06,fundamentals-2026-09-06,Security+,7,Hash value,Incorrect
+2026-09-06,fundamentals-2026-09-06,Security+,8,MFA,Correct
+2026-09-06,fundamentals-2026-09-06,Security+,9,Non-repudiation,Correct
+2026-09-06,fundamentals-2026-09-06,Security+,10,Hashing,Incorrect
+2026-09-06,threats-2026-09-06,Security+,1,Business email compromise,Correct
+2026-09-06,threats-2026-09-06,Security+,2,Vishing,Correct
+2026-09-06,threats-2026-09-06,Security+,3,Baiting,Correct
+2026-09-06,threats-2026-09-06,Security+,4,Pretexting,Incorrect
+2026-09-06,threats-2026-09-06,Security+,5,Typosquatting,Incorrect
+2026-09-06,threats-2026-09-06,Security+,6,Smishing,Correct
+2026-09-06,threats-2026-09-06,Security+,7,Pharming,Correct
+2026-09-06,threats-2026-09-06,Security+,8,Tailgating,Correct
+2026-09-06,threats-2026-09-06,Security+,9,Spear phishing,Correct
+2026-09-06,threats-2026-09-06,Security+,10,Impersonation,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,1,SQL injection,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,2,XSS,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,3,Directory traversal,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,4,Buffer overflow,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,5,Race condition,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,6,Input validation,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,7,Zero-day vulnerability,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,8,Misconfiguration,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,9,Unpatched software,Correct
+2026-09-06,vulnerabilities-2026-09-06,Security+,10,Broken access control,Correct
+2026-09-06,controls-2026-09-06,Security+,1,Operational controls,Incorrect
+2026-09-06,controls-2026-09-06,Security+,2,Physical controls,Correct
+2026-09-06,controls-2026-09-06,Security+,3,Deterrent controls,Incorrect
+2026-09-06,controls-2026-09-06,Security+,4,Preventive controls,Correct
+2026-09-06,controls-2026-09-06,Security+,5,Detective controls,Correct
+2026-09-06,controls-2026-09-06,Security+,6,Corrective controls,Correct
+2026-09-06,controls-2026-09-06,Security+,7,Compensating controls,Correct
+2026-09-06,controls-2026-09-06,Security+,8,Directive controls,Correct
+2026-09-06,controls-2026-09-06,Security+,9,Defense in depth,Correct
+2026-09-06,controls-2026-09-06,Security+,10,Managerial controls,Correct
+2026-09-09,review-2026-09-09,Security+,1,MFA blocks stolen password,Correct
+2026-09-09,review-2026-09-09,Security+,2,Spear phishing,Correct
+2026-09-09,review-2026-09-09,Security+,3,Brute force vs password spraying,Incorrect
+2026-09-09,review-2026-09-09,Security+,4,Fingerprint plus PIN,Correct
+2026-09-09,review-2026-09-09,Security+,5,Vishing,Correct
