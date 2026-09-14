@@ -106,3 +106,23 @@ Date (America/New_York),Practice set,Track,Question,Topic,Result
 2026-09-09,review-2026-09-09,Security+,3,Brute force vs password spraying,Incorrect
 2026-09-09,review-2026-09-09,Security+,4,Fingerprint plus PIN,Correct
 2026-09-09,review-2026-09-09,Security+,5,Vishing,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,1,Worm,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,2,Trojan,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,3,Logic bomb,Incorrect
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,4,Keylogger,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,5,Ransomware,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,6,Rootkit,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,7,Virus,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,8,Spyware,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,9,Cryptojacking,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-1,Security+,10,Logic bomb,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,1,Macro virus,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,2,Rootkit,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,3,Spyware,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,4,Isolate infected servers,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,5,Conditional trigger,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,6,Trojan delivering ransomware,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,7,Behavior-based detection,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,8,Recording individual keystrokes,Incorrect
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,9,Double extortion,Correct
+2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,10,Autonomous spread,Correct

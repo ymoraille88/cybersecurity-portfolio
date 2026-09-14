@@ -47,7 +47,7 @@ permalink: /security-plus.html
           <img src="img/portfolio/securityplus.png" width="144" height="144" alt="" class="study-icon">
           <div>
             <h1>{{ page.title }}</h1>
-            <p>Documented practice from August 8 to September 9, 2026 — building foundations, explaining answers, and reviewing mistakes.</p>
+            <p>Documented practice from August 8 to September 14, 2026 — building foundations, explaining answers, and reviewing mistakes.</p>
             <span class="study-status">In Progress</span>
           </div>
         </div>
@@ -77,7 +77,7 @@ permalink: /security-plus.html
             <div><dt>Completed practice sets</dt><dd>{{ sessions.size }}</dd></div>
             <div><dt>Questions answered</dt><dd>{{ total_questions }}</dd></div>
           </dl>
-          <p><strong>9 documented practice days through September 9, 2026.</strong> Security+ practice: <strong>{{ security_correct }}/{{ security_questions }} correct ({{ security_correct | times: 100.0 | divided_by: security_questions | round: 1 }}%)</strong>. Supporting networking practice: <strong>{{ network_correct }}/{{ network_questions }} correct ({{ network_correct | times: 100.0 | divided_by: network_questions | round: 1 }}%)</strong>.</p>
+          <p><strong>10 documented practice days through September 14, 2026.</strong> Security+ practice: <strong>{{ security_correct }}/{{ security_questions }} correct ({{ security_correct | times: 100.0 | divided_by: security_questions | round: 1 }}%)</strong>. Supporting networking practice: <strong>{{ network_correct }}/{{ network_questions }} correct ({{ network_correct | times: 100.0 | divided_by: network_questions | round: 1 }}%)</strong>.</p>
           <p class="study-context">Combined results from the completed practice sets recovered from my study conversations. Accuracy is total correct answers divided by total questions; each completed attempt is counted once. These are guided practice sets, not full-length mock exams or a measure of course completion.</p>
           <p class="study-context">Overall completion: {{ study.overall-progress | downcase }}. Exam date: {{ study.exam-date | downcase }}.</p>
           <div class="study-reinforcement"><h3>Next reinforcement topic</h3><p>{{ review.reinforcement }}</p></div>
@@ -98,7 +98,7 @@ permalink: /security-plus.html
             </table>
           </div>
           <p class="study-context">Each numbered prompt counts once; the three-part subnet matching exercise counts as one item. The September fundamentals result includes an accepted correction of a mistyped answer. Repeated prompts, unanswered questions, and running-score summaries are excluded. “20/20 complete” in the original discussions described completion; the two August 20-question sets each scored 18/20. Guided questions sometimes included hints and immediate review, so these results are not timed exam scores.</p>
-          <p><a href="study-practice-record.csv" download>Download the complete verified question log (CSV)</a> — dates, topics, and results for all 107 prompts.</p>
+          <p><a href="study-practice-record.csv" download>Download the complete verified question log (CSV)</a> — dates, topics, and results for all {{ total_questions }} prompts.</p>
           <h3>Topics to reinforce</h3>
           <ul class="study-goals">
             <li>DNS, DHCP, ARP, and the IP/MAC distinction.</li>
@@ -109,6 +109,7 @@ permalink: /security-plus.html
             <li>Pretexting and typosquatting.</li>
             <li>Security control categories; deterrent vs. preventive controls.</li>
             <li>Brute force vs. password spraying.</li>
+            <li>Logic bombs vs. rootkits; autofill and the limits of keystroke-only capture.</li>
           </ul>
         </section>
         <section class="study-panel" aria-labelledby="timeline-title">
@@ -123,26 +124,52 @@ permalink: /security-plus.html
             <li><strong>August 27 · Course selection:</strong> established Andrew Ramdayal’s Udemy SY0-701 course as my main course, with a study guide and targeted practice for reinforcement.</li>
             <li><strong>September 6 · Answered practice:</strong> completed four 10-question sets on fundamentals, threats, vulnerabilities, and control categories/types.</li>
             <li><strong>September 9 · Review &amp; notes:</strong> completed an additional 4/5 mixed review and shared practice notes; identified brute force vs. password spraying for reinforcement.</li>
+            <li><strong>September 14 · Section 6 practice:</strong> completed two 10-question Signs of Attacks rounds, scoring 9/10 in each. Reviewed malware identification, containment, behavioral detection, and double extortion.</li>
           </ul>
         </section>
         <section class="study-panel" aria-labelledby="practice-title">
           <h2 id="practice-title">Recent Practice Questions</h2>
-          <p><strong>{{ review.label }}: {{ review.correct }}/{{ review.questions }} correct ({{ review.percent }}%).</strong> The examples below come from my shared study notes.</p>
-          <div class="study-question">
-            <h3>Stolen password, blocked sign-in</h3>
-            <p>An attacker has a user's password, but remote access is denied because an additional verification method is required. Which control prevented access?</p>
-            <details><summary>Answer and explanation</summary><p><strong>Multifactor authentication.</strong> It requires another factor beyond the stolen password.</p></details>
-          </div>
-          <div class="study-question">
-            <h3>A targeted gift-card request</h3>
-            <p>An attacker researches a CEO and emails a specific employee, impersonating the CEO and requesting gift cards. What type of attack is this?</p>
-            <details><summary>Answer and explanation</summary><p><strong>Spear phishing.</strong> This is a targeted phishing attack aimed at a specific person or organization.</p></details>
-          </div>
-          <div class="study-question">
-            <h3>Many passwords, one account</h3>
-            <p>Hundreds of login attempts use different common passwords against the same username. Which attack does this describe?</p>
-            <details><summary>Answer and explanation</summary><p><strong>Brute-force attack.</strong> Many passwords are tried against one account. Password spraying instead tries one or a few common passwords across many accounts.</p></details>
-          </div>
+          <p><strong>{{ review.label }}: {{ review.correct }}/{{ review.questions }} correct ({{ review.percent }}%).</strong> Completed September 14, 2026, with feedback after each answer. These original guided questions are separate from the Udemy quizzes below.</p>
+          <p>Both rounds scored 9/10. Expand each question to see the choices, my answer, and the correct answer.</p>
+          <p><a href="security-plus-section-6-practice.md" download>Download the Section 6 questions and learning notes (Markdown)</a></p>
+          <h3>Round 1 — 9/10</h3>
+          <div class="study-question"><details><summary>Question 1: Malware automatically spreads between computers by exploiting a network service vulnerability, without users opening files or running programs. What is it?</summary><ul><li>A. Trojan</li><li>B. Worm</li><li>C. Logic bomb</li><li>D. File-infecting virus</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> B — Worm.</p></details></div>
+          <div class="study-question"><details><summary>Question 2: A downloaded PDF converter secretly gives an attacker remote access when installed. What is it?</summary><ul><li>A. Worm</li><li>B. Trojan</li><li>C. Logic bomb</li><li>D. Spyware</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> B — Trojan.</p></details></div>
+          <div class="study-question"><details><summary>Question 3: Malicious code deletes company files if a particular employee&#x27;s account is disabled. What is it?</summary><ul><li>A. Ransomware</li><li>B. Rootkit</li><li>C. Logic bomb</li><li>D. Worm</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> C — Logic bomb.</p></details></div>
+          <div class="study-question"><details><summary>Question 4: Malware sends users&#x27; keystrokes to an attacker, capturing typed passwords. What most specifically describes it?</summary><ul><li>A. Keylogger</li><li>B. Ransomware</li><li>C. Worm</li><li>D. Rootkit</li></ul><p><strong>My answer:</strong> A. <strong>Correct answer:</strong> A — Keylogger.</p></details></div>
+          <div class="study-question"><details><summary>Question 5: Employees cannot open their files and receive a demand for payment in exchange for a decryption key. What is it?</summary><ul><li>A. Spyware</li><li>B. Logic bomb</li><li>C. Ransomware</li><li>D. Trojan</li></ul><p><strong>My answer:</strong> C. <strong>Correct answer:</strong> C — Ransomware.</p></details></div>
+          <div class="study-question"><details><summary>Question 6: Malware conceals malicious files and processes while maintaining administrator-level access. What is it?</summary><ul><li>A. Rootkit</li><li>B. Worm</li><li>C. Ransomware</li><li>D. Keylogger</li></ul><p><strong>My answer:</strong> A. <strong>Correct answer:</strong> A — Rootkit.</p></details></div>
+          <div class="study-question"><details><summary>Question 7: A malicious program attaches to an executable and infects other executable files when the user runs it. What is it?</summary><ul><li>A. Worm</li><li>B. Virus</li><li>C. Trojan</li><li>D. Logic bomb</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> B — Virus.</p></details></div>
+          <div class="study-question"><details><summary>Question 8: Software secretly collects browsing history, takes screenshots, and transmits information to a third party. What is it?</summary><ul><li>A. Ransomware</li><li>B. Worm</li><li>C. Spyware</li><li>D. Logic bomb</li></ul><p><strong>My answer:</strong> C. <strong>Correct answer:</strong> C — Spyware.</p></details></div>
+          <div class="study-question"><details><summary>Question 9: A slow workstation has high CPU usage and an unauthorized cryptocurrency mining process. What is this activity?</summary><ul><li>A. Cryptojacking</li><li>B. Keylogging</li><li>C. Ransomware</li><li>D. Logic bomb</li></ul><p><strong>My answer:</strong> A. <strong>Correct answer:</strong> A — Cryptojacking.</p></details></div>
+          <div class="study-question"><details><summary>Question 10: Malicious code remains inactive until a specific date, then deletes backup files. What is it?</summary><ul><li>A. Rootkit</li><li>B. Trojan</li><li>C. Logic bomb</li><li>D. Worm</li></ul><p><strong>My answer:</strong> C. <strong>Correct answer:</strong> C — Logic bomb.</p></details></div>
+          <h3>Round 2 — 9/10</h3>
+          <div class="study-question"><details><summary>Question 1: An employee enables macros in a spreadsheet; malicious code runs and infects other spreadsheets. What is it?</summary><ul><li>A. Worm</li><li>B. Macro virus</li><li>C. Rootkit</li><li>D. Logic bomb</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> B — Macro virus.</p></details></div>
+          <div class="study-question"><details><summary>Question 2: Malware modifies operating system components to hide files and processes from security tools, persisting after suspicious applications are removed. What is it?</summary><ul><li>A. Spyware</li><li>B. Ransomware</li><li>C. Rootkit</li><li>D. Macro virus</li></ul><p><strong>My answer:</strong> C. <strong>Correct answer:</strong> C — Rootkit.</p></details></div>
+          <div class="study-question"><details><summary>Question 3: A free browser extension secretly records browsing activity and sends screenshots externally. What best describes its primary function?</summary><ul><li>A. Trojan</li><li>B. Spyware</li><li>C. Worm</li><li>D. Ransomware</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> B — Spyware.</p></details></div>
+          <div class="study-question"><details><summary>Question 4: Malware spreads between servers without user interaction. What best limits spread during cleanup?</summary><ul><li>A. Change employee passwords</li><li>B. Isolate infected servers from the network</li><li>C. Disable spreadsheet macros</li><li>D. Increase backup frequency</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> B — Isolate infected servers.</p></details></div>
+          <div class="study-question"><details><summary>Question 5: A script checks payroll daily and deletes critical files if its creator&#x27;s name disappears. What is the key logic bomb clue?</summary><ul><li>A. Runs daily</li><li>B. Accesses sensitive information</li><li>C. Destruction depends on a specific condition</li><li>D. Creator is an employee</li></ul><p><strong>My answer:</strong> C. <strong>Correct answer:</strong> C — Conditional trigger.</p></details></div>
+          <div class="study-question"><details><summary>Question 6: A fake software update encrypts files and demands payment. What describes delivery and function?</summary><ul><li>A. Trojan delivering ransomware</li><li>B. Worm delivering spyware</li><li>C. Rootkit delivering a macro virus</li><li>D. Logic bomb delivering a keylogger</li></ul><p><strong>My answer:</strong> A. <strong>Correct answer:</strong> A — Trojan delivering ransomware.</p></details></div>
+          <div class="study-question"><details><summary>Question 7: A tool flags a new program for rapidly modifying files and disabling recovery, without a known malware signature. Which detection method is used?</summary><ul><li>A. Signature-based detection</li><li>B. Behavior-based detection</li><li>C. File hash matching</li><li>D. Manual code review</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> B — Behavior-based detection.</p></details></div>
+          <div class="study-question"><details><summary>Question 8: An employee autofills a password instead of typing it. Which malware capability is most directly bypassed?</summary><ul><li>A. Recording individual keystrokes</li><li>B. Capturing screenshots</li><li>C. Stealing session cookies</li><li>D. Reading credentials from browser memory</li></ul><p><strong>My answer:</strong> D. <strong>Correct answer:</strong> A — Recording individual keystrokes.</p></details></div>
+          <div class="study-question"><details><summary>Question 9: After files are restored from ransomware, the attacker threatens to publish documents stolen before encryption. What does this demonstrate?</summary><ul><li>A. False positive</li><li>B. Double extortion</li><li>C. Logic bomb</li><li>D. Resource exhaustion</li></ul><p><strong>My answer:</strong> B. <strong>Correct answer:</strong> B — Double extortion.</p></details></div>
+          <div class="study-question"><details><summary>Question 10: An attachment executes malware that then independently exploits network services to copy itself between computers. Which characteristic identifies the worm component?</summary><ul><li>A. Arrived through email</li><li>B. Conceals itself in a legitimate file</li><li>C. Spreads without further user action</li><li>D. Executes only on a specific date</li></ul><p><strong>My answer:</strong> C. <strong>Correct answer:</strong> C — Autonomous spread.</p></details></div>
+          <h3>Review takeaways</h3>
+          <ul class="study-goals">
+            <li><strong>Logic bomb vs. rootkit:</strong> A logic bomb triggers on a condition. A rootkit hides malicious activity and supports privileged access. I missed this distinction in Round 1, then answered later logic bomb scenarios correctly.</li>
+            <li><strong>Autofill:</strong> Avoiding typed keystrokes bypasses basic keystroke-only capture. It does not stop malware from reading browser memory or capturing form values through other methods. This was my Round 2 correction.</li>
+          </ul>
+        </section>
+        <section class="study-panel" aria-labelledby="udemy-title">
+          <h2 id="udemy-title">Udemy Quiz Record</h2>
+          <p>I also completed the five course quizzes linked below. Titles and scores are awaiting documentation; these attempts are excluded from the guided-practice totals above. Udemy may require sign-in to view them.</p>
+          <ul class="study-resources">
+            <li><a href="https://www.udemy.com/course/comptia_security_plus/learn/quiz/6180122#overview">Udemy quiz 6180122</a><span>Title and score pending.</span></li>
+            <li><a href="https://www.udemy.com/course/comptia_security_plus/learn/quiz/6180118#overview">Udemy quiz 6180118</a><span>Title and score pending.</span></li>
+            <li><a href="https://www.udemy.com/course/comptia_security_plus/learn/quiz/6180116#overview">Udemy quiz 6180116</a><span>Title and score pending.</span></li>
+            <li><a href="https://www.udemy.com/course/comptia_security_plus/learn/quiz/6180064#overview">Udemy quiz 6180064</a><span>Title and score pending.</span></li>
+            <li><a href="https://www.udemy.com/course/comptia_security_plus/learn/quiz/6180068#overview">Udemy quiz 6180068</a><span>Title and score pending.</span></li>
+          </ul>
         </section>
         <section class="study-panel" aria-labelledby="notes-title">
           <h2 id="notes-title">Sample Notes</h2>
