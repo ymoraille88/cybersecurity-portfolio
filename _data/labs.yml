@@ -24,10 +24,10 @@
 # Record individual results, never infer an overall average or completion percentage.
 security-plus:
   latest-review:
-    label: Additional review
-    correct: 4
-    questions: 5
-    percent: 80
-    reinforcement: Brute force vs. password spraying
+    label: Section 6 — Signs of Attacks (two rounds)
+    correct: 18
+    questions: 20
+    percent: 90
+    reinforcement: Autofill and keystroke-only capture; logic bombs vs. rootkits
   overall-progress: Not yet tracked
   exam-date: To be confirmed

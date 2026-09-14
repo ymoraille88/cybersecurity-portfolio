@@ -61,3 +61,21 @@
   questions: 5
   focus: "Brute force vs. password spraying."
   note: "Additional review of authentication and social engineering."
+
+- id: "signs-of-attacks-2026-09-14-round-1"
+  date: "2026-09-14"
+  label: "Section 6 — Malware identification"
+  track: "Security+"
+  correct: 9
+  questions: 10
+  focus: "Logic bombs vs. rootkits."
+  note: "Original guided questions with immediate feedback; separate from Udemy quiz results."
+
+- id: "signs-of-attacks-2026-09-14-round-2"
+  date: "2026-09-14"
+  label: "Section 6 — Applied attack scenarios"
+  track: "Security+"
+  correct: 9
+  questions: 10
+  focus: "Autofill and the limits of keystroke-only capture."
+  note: "Original guided questions with immediate feedback; separate from Udemy quiz results."
