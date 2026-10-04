@@ -79,3 +79,14 @@
   questions: 10
   focus: "Autofill and the limits of keystroke-only capture."
   note: "Original guided questions with immediate feedback; separate from Udemy quiz results."
+
+
+- id: "cryptography-2026-09-29"
+  start: "2026-09-28"
+  date: "2026-09-29"
+  label: "Section 7 — Cryptography"
+  track: "Security+"
+  correct: 32
+  questions: 35
+  focus: "Encoding vs. encryption; substitution vs. transposition; Diffie-Hellman."
+  note: "35 original guided multiple-choice questions. Separate matching exercise: 2/5; excluded from these totals."

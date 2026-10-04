@@ -24,10 +24,11 @@
 # Record individual results, never infer an overall average or completion percentage.
 security-plus:
   latest-review:
-    label: Section 6 — Signs of Attacks (two rounds)
-    correct: 18
-    questions: 20
-    percent: 90
-    reinforcement: Autofill and keystroke-only capture; logic bombs vs. rootkits
+    label: Section 7 — Cryptography
+    correct: 32
+    questions: 35
+    percent: 91.4
+    reinforcement: Encoding vs. encryption; substitution vs. transposition; Diffie-Hellman; TPM vs. HSM vs. secure enclave
   overall-progress: Not yet tracked
   exam-date: To be confirmed
+
