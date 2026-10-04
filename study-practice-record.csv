@@ -126,3 +126,38 @@ Date (America/New_York),Practice set,Track,Question,Topic,Result
 2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,8,Recording individual keystrokes,Incorrect
 2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,9,Double extortion,Correct
 2026-09-14,signs-of-attacks-2026-09-14-round-2,Security+,10,Autonomous spread,Correct
+2026-09-28,cryptography-2026-09-29,Security+,1,Confidentiality,Correct
+2026-09-28,cryptography-2026-09-29,Security+,2,Cryptanalysis,Correct
+2026-09-28,cryptography-2026-09-29,Security+,3,Cryptography and availability,Correct
+2026-09-28,cryptography-2026-09-29,Security+,4,Key secrecy vs encoding,Incorrect
+2026-09-28,cryptography-2026-09-29,Security+,5,Block vs stream ciphers,Correct
+2026-09-28,cryptography-2026-09-29,Security+,6,Substitution vs transposition,Incorrect
+2026-09-28,cryptography-2026-09-29,Security+,7,Symmetric encryption,Correct
+2026-09-28,cryptography-2026-09-29,Security+,8,AES,Correct
+2026-09-28,cryptography-2026-09-29,Security+,9,Shared-key distribution,Correct
+2026-09-28,cryptography-2026-09-29,Security+,10,Public-key encryption,Correct
+2026-09-29,cryptography-2026-09-29,Security+,11,Diffie-Hellman,Incorrect
+2026-09-29,cryptography-2026-09-29,Security+,12,ECC,Correct
+2026-09-29,cryptography-2026-09-29,Security+,13,Hybrid cryptography,Correct
+2026-09-29,cryptography-2026-09-29,Security+,14,Hash integrity check,Correct
+2026-09-29,cryptography-2026-09-29,Security+,15,Avalanche effect,Correct
+2026-09-29,cryptography-2026-09-29,Security+,16,Hash collision,Correct
+2026-09-29,cryptography-2026-09-29,Security+,17,SHA-256,Correct
+2026-09-29,cryptography-2026-09-29,Security+,18,Digital signature keys,Correct
+2026-09-29,cryptography-2026-09-29,Security+,19,Signature confidentiality limits,Correct
+2026-09-29,cryptography-2026-09-29,Security+,20,PKI,Correct
+2026-09-29,cryptography-2026-09-29,Security+,21,TLS,Correct
+2026-09-29,cryptography-2026-09-29,Security+,22,CSR and private keys,Correct
+2026-09-29,cryptography-2026-09-29,Security+,23,CA vs RA,Correct
+2026-09-29,cryptography-2026-09-29,Security+,24,X.509 certificates,Correct
+2026-09-29,cryptography-2026-09-29,Security+,25,Wildcard certificates,Correct
+2026-09-29,cryptography-2026-09-29,Security+,26,Self-signed certificates,Correct
+2026-09-29,cryptography-2026-09-29,Security+,27,Offline root CA,Correct
+2026-09-29,cryptography-2026-09-29,Security+,28,Compromised certificate revocation,Correct
+2026-09-29,cryptography-2026-09-29,Security+,29,CRL vs OCSP,Correct
+2026-09-29,cryptography-2026-09-29,Security+,30,Public-key pinning,Correct
+2026-09-29,cryptography-2026-09-29,Security+,31,Steganography,Correct
+2026-09-29,cryptography-2026-09-29,Security+,32,Blockchain integrity,Correct
+2026-09-29,cryptography-2026-09-29,Security+,33,Password salting,Correct
+2026-09-29,cryptography-2026-09-29,Security+,34,Tokenization,Correct
+2026-09-29,cryptography-2026-09-29,Security+,35,Key escrow,Correct
