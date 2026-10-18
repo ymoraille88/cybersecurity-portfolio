@@ -90,3 +90,44 @@
   questions: 35
   focus: "Encoding vs. encryption; substitution vs. transposition; Diffie-Hellman."
   note: "35 original guided multiple-choice questions. Separate matching exercise: 2/5; excluded from these totals."
+
+- id: "section-8-october-2026"
+  date: ""
+  date_label: "October 2026 (exact dates not recorded)"
+  label: "Section 8 — Social Engineering"
+  track: "Security+"
+  correct: 28
+  questions: 30
+  focus: "Trusted supplier contact information; measuring phishing reporting speed."
+  note: "Missed questions 11 and 12. Guided practice with immediate feedback."
+
+- id: "section-9-october-2026"
+  date: ""
+  date_label: "October 2026 (exact completion date not recorded)"
+  label: "Section 9 — Securing IT Assets"
+  track: "Security+"
+  correct: 30
+  questions: 30
+  focus: "Continue with harder scenarios and closer answer choices."
+  note: "All 30 correct, including the accepted correction of question 1 from C to B. Guided practice with immediate feedback."
+
+- id: "section-10-october-2026"
+  date: ""
+  date_label: "October 15–17, 2026 (completion day not recorded)"
+  label: "Section 10 — Security Architecture"
+  track: "Security+"
+  correct: 24
+  questions: 30
+  focus: "IaaS vs. PaaS; RTOS; Type 1 hypervisors; community cloud; air gaps; shared responsibility."
+  note: "Missed questions 1, 8, 9, 11, 18, and 21. Question 28 answer 'dd' was accepted as D. Guided practice with immediate feedback."
+
+- id: "section-11-october-2026"
+  date: "2026-10-18"
+  start: "2026-10-17"
+  date_label: "October 17–18, 2026"
+  label: "Section 11 — Security Principles"
+  track: "Security+"
+  correct: 23
+  questions: 30
+  focus: "Jump servers vs. taps; stateful vs. stateless firewalls; least privilege; default deny; active-passive; full tunneling."
+  note: "Missed questions 4, 8, 14, 18, 23, 25, and 27. Guided practice with immediate feedback."

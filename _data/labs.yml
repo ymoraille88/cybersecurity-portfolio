@@ -24,11 +24,11 @@
 # Record individual results, never infer an overall average or completion percentage.
 security-plus:
   latest-review:
-    label: Section 7 — Cryptography
-    correct: 32
-    questions: 35
-    percent: 91.4
-    reinforcement: Encoding vs. encryption; substitution vs. transposition; Diffie-Hellman; TPM vs. HSM vs. secure enclave
+    label: Section 11 — Security Principles
+    correct: 23
+    questions: 30
+    percent: 76.7
+    reinforcement: Jump servers vs. taps; stateful vs. stateless firewalls; least privilege; default deny; active-passive; full tunneling
   overall-progress: Not yet tracked
   exam-date: To be confirmed
 
