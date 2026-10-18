@@ -161,3 +161,123 @@ Date (America/New_York),Practice set,Track,Question,Topic,Result
 2026-09-29,cryptography-2026-09-29,Security+,33,Password salting,Correct
 2026-09-29,cryptography-2026-09-29,Security+,34,Tokenization,Correct
 2026-09-29,cryptography-2026-09-29,Security+,35,Key escrow,Correct
+,section-8-october-2026,Security+,1,Smishing,Correct
+,section-8-october-2026,Security+,2,Spear phishing,Correct
+,section-8-october-2026,Security+,3,Misinformation vs disinformation,Correct
+,section-8-october-2026,Security+,4,Watering hole,Correct
+,section-8-october-2026,Security+,5,Business email compromise,Correct
+,section-8-october-2026,Security+,6,Pretexting,Correct
+,section-8-october-2026,Security+,7,Typosquatting,Correct
+,section-8-october-2026,Security+,8,Trusted callback verification,Correct
+,section-8-october-2026,Security+,9,Phishing coaching,Correct
+,section-8-october-2026,Security+,10,Brand impersonation,Correct
+,section-8-october-2026,Security+,11,Supplier payment verification,Incorrect
+,section-8-october-2026,Security+,12,Reporting speed metrics,Incorrect
+,section-8-october-2026,Security+,13,QR-code phishing response,Correct
+,section-8-october-2026,Security+,14,Recurring role-based training,Correct
+,section-8-october-2026,Security+,15,Credential compromise response,Correct
+,section-8-october-2026,Security+,16,Authority,Correct
+,section-8-october-2026,Security+,17,HTTPS limitations,Correct
+,section-8-october-2026,Security+,18,Disinformation,Correct
+,section-8-october-2026,Security+,19,Help-desk verification,Correct
+,section-8-october-2026,Security+,20,Mass phishing,Correct
+,section-8-october-2026,Security+,21,Approved reporting process,Correct
+,section-8-october-2026,Security+,22,Browser patching,Correct
+,section-8-october-2026,Security+,23,Payment escalation,Correct
+,section-8-october-2026,Security+,24,Correcting misinformation,Correct
+,section-8-october-2026,Security+,25,Reporting practice,Correct
+,section-8-october-2026,Security+,26,Whaling,Correct
+,section-8-october-2026,Security+,27,Email authentication limits,Correct
+,section-8-october-2026,Security+,28,Finance training,Correct
+,section-8-october-2026,Security+,29,Campaign reporting,Correct
+,section-8-october-2026,Security+,30,MFA social engineering,Correct
+,section-9-october-2026,Security+,1,Network segmentation,Correct
+,section-9-october-2026,Security+,2,Least privilege,Correct
+,section-9-october-2026,Security+,3,Air-gapped isolation,Correct
+,section-9-october-2026,Security+,4,Application allowlisting,Correct
+,section-9-october-2026,Security+,5,Patch testing and rollback,Correct
+,section-9-october-2026,Security+,6,Attack surface reduction,Correct
+,section-9-october-2026,Security+,7,ACLs,Correct
+,section-9-october-2026,Security+,8,Verified sanitization,Correct
+,section-9-october-2026,Security+,9,Configuration drift,Correct
+,section-9-october-2026,Security+,10,Separate privileged accounts,Correct
+,section-9-october-2026,Security+,11,SIEM,Correct
+,section-9-october-2026,Security+,12,Legacy server containment,Correct
+,section-9-october-2026,Security+,13,Role-change access review,Correct
+,section-9-october-2026,Security+,14,Inter-VLAN restrictions,Correct
+,section-9-october-2026,Security+,15,Full-disk encryption,Correct
+,section-9-october-2026,Security+,16,Default credentials,Correct
+,section-9-october-2026,Security+,17,Patch verification,Correct
+,section-9-october-2026,Security+,18,Filesystem permissions,Correct
+,section-9-october-2026,Security+,19,Incident isolation,Correct
+,section-9-october-2026,Security+,20,Decommissioning access,Correct
+,section-9-october-2026,Security+,21,Hardening rollback,Correct
+,section-9-october-2026,Security+,22,Signature and hash allowlisting,Correct
+,section-9-october-2026,Security+,23,Firewall least privilege,Correct
+,section-9-october-2026,Security+,24,Risk-based patch priority,Correct
+,section-9-october-2026,Security+,25,Alert tuning,Correct
+,section-9-october-2026,Security+,26,Change management,Correct
+,section-9-october-2026,Security+,27,TLS in transit,Correct
+,section-9-october-2026,Security+,28,Baseline exceptions,Correct
+,section-9-october-2026,Security+,29,Asset discovery and ownership,Correct
+,section-9-october-2026,Security+,30,Production readiness,Correct
+,section-10-october-2026,Security+,1,IaaS,Incorrect
+,section-10-october-2026,Security+,2,Infrastructure as Code,Correct
+,section-10-october-2026,Security+,3,Containers vs VMs,Correct
+,section-10-october-2026,Security+,4,Microservices,Correct
+,section-10-october-2026,Security+,5,Serverless responsibility,Correct
+,section-10-october-2026,Security+,6,SDN,Correct
+,section-10-october-2026,Security+,7,Hybrid cloud,Correct
+,section-10-october-2026,Security+,8,RTOS,Incorrect
+,section-10-october-2026,Security+,9,Type 1 hypervisor,Incorrect
+,section-10-october-2026,Security+,10,High availability,Correct
+,section-10-october-2026,Security+,11,Community cloud,Incorrect
+,section-10-october-2026,Security+,12,IoT segmentation,Correct
+,section-10-october-2026,Security+,13,SaaS,Correct
+,section-10-october-2026,Security+,14,ICS patch planning,Correct
+,section-10-october-2026,Security+,15,Centralized management,Correct
+,section-10-october-2026,Security+,16,PaaS,Correct
+,section-10-october-2026,Security+,17,VM escape,Correct
+,section-10-october-2026,Security+,18,Air-gap removable media risk,Incorrect
+,section-10-october-2026,Security+,19,Elasticity,Correct
+,section-10-october-2026,Security+,20,On-premises responsibility,Correct
+,section-10-october-2026,Security+,21,Cloud access responsibility,Incorrect
+,section-10-october-2026,Security+,22,Single point of failure,Correct
+,section-10-october-2026,Security+,23,Type 2 hypervisor,Correct
+,section-10-october-2026,Security+,24,Multi-region failover,Correct
+,section-10-october-2026,Security+,25,Embedded systems,Correct
+,section-10-october-2026,Security+,26,Service-to-service authentication,Correct
+,section-10-october-2026,Security+,27,Decentralization,Correct
+,section-10-october-2026,Security+,28,Secrets management in IaC,Correct
+,section-10-october-2026,Security+,29,SCADA,Correct
+,section-10-october-2026,Security+,30,Database failover,Correct
+2026-10-17,section-11-october-2026,Security+,1,Screened subnet (DMZ),Correct
+2026-10-17,section-11-october-2026,Security+,2,Fail-closed,Correct
+2026-10-17,section-11-october-2026,Security+,3,Passive IDS,Correct
+2026-10-17,section-11-october-2026,Security+,4,Jump server,Incorrect
+2026-10-17,section-11-october-2026,Security+,5,WAF,Correct
+2026-10-17,section-11-october-2026,Security+,6,Forward proxy,Correct
+2026-10-17,section-11-october-2026,Security+,7,NAC,Correct
+2026-10-17,section-11-october-2026,Security+,8,Stateful inspection,Incorrect
+2026-10-17,section-11-october-2026,Security+,9,Remote-access VPN,Correct
+2026-10-17,section-11-october-2026,Security+,10,Inline IPS,Correct
+2026-10-17,section-11-october-2026,Security+,11,Reverse proxy,Correct
+2026-10-17,section-11-october-2026,Security+,12,Firewall rule ordering,Correct
+2026-10-17,section-11-october-2026,Security+,13,Fail-open,Correct
+2026-10-18,section-11-october-2026,Security+,14,DMZ least privilege,Incorrect
+2026-10-18,section-11-october-2026,Security+,15,Load balancing,Correct
+2026-10-18,section-11-october-2026,Security+,16,Site-to-site VPN,Correct
+2026-10-18,section-11-october-2026,Security+,17,NGFW application awareness,Correct
+2026-10-18,section-11-october-2026,Security+,18,Default deny,Incorrect
+2026-10-18,section-11-october-2026,Security+,19,802.1X,Correct
+2026-10-18,section-11-october-2026,Security+,20,Split tunneling,Correct
+2026-10-18,section-11-october-2026,Security+,21,False positive,Correct
+2026-10-18,section-11-october-2026,Security+,22,Jump-server protections,Correct
+2026-10-18,section-11-october-2026,Security+,23,Stateless packet filtering,Incorrect
+2026-10-18,section-11-october-2026,Security+,24,False negative,Correct
+2026-10-18,section-11-october-2026,Security+,25,Active-passive,Incorrect
+2026-10-18,section-11-october-2026,Security+,26,Anomaly-based detection,Correct
+2026-10-18,section-11-october-2026,Security+,27,Full tunneling,Incorrect
+2026-10-18,section-11-october-2026,Security+,28,East-west traffic,Correct
+2026-10-18,section-11-october-2026,Security+,29,Passive IDS limitations,Correct
+2026-10-18,section-11-october-2026,Security+,30,Management interface protection,Correct
