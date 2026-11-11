@@ -67,3 +67,7 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+
+# Uploaded update package; not part of the published site.
+exclude:
+  - securityplus-certification-update
