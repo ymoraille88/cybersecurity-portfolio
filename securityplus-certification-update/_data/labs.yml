@@ -1,0 +1,35 @@
+# Keyed by each existing project's modal-id; keep the original grid order and titles.
+'7':
+  summary: Security+ certified November 7, 2026; documented practice and ongoing review.
+  detail-page: security-plus.html
+'1':
+  summary: Security controls, compliance, risks, and recommendations.
+'2':
+  summary: DDoS incident analysis, response, and recovery planning.
+'3':
+  summary: SQL joins and queries to filter and analyze data.
+'4':
+  summary: Database vulnerabilities, risks, and remediation planning.
+'6':
+  summary: Hands-on TryHackMe labs, notes, and lessons learned.
+'5':
+  summary: Ongoing notes on incident investigation and response.
+'10':
+  summary: Planned Azure labs in identity, access, and monitoring.
+'8':
+  summary: Planned Linux hardening, permissions, SSH, and auditing.
+'9':
+  summary: Planned Python log analysis and security automation.
+
+# Record individual results, never infer an overall average or completion percentage.
+security-plus:
+  latest-review:
+    label: Section 11 — Security Principles
+    correct: 23
+    questions: 30
+    percent: 76.7
+    reinforcement: Jump servers vs. taps; stateful vs. stateless firewalls; least privilege; default deny; active-passive; full tunneling
+  overall-progress: Not yet tracked
+  exam-date: "2026-11-07"
+  certification-status: Certified
+
