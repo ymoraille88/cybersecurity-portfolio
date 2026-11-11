@@ -534,26 +534,46 @@ footer .footer-below {
     padding: 45px 0 60px;
 }
 
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
 .certification-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
     margin-bottom: 30px;
 }
 
-.certification-img {
-    display: block;
-    width: auto;
-    max-width: 100%;
-    margin: 0 auto 20px;
-    object-fit: contain;
-}
-
-/* Keep all four credential cards aligned. */
 .certification-item .certification-img {
-    height: 235px;
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    margin: 0 auto 20px;
 }
 
-@media (min-width: 768px) {
-    .certification-item:nth-child(odd) {
-        clear: left;
+#certifications .certification-button {
+    margin-top: auto;
+}
+
+.certification-item .certification-date {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .certifications-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
     }
 }
 
