@@ -546,17 +546,15 @@ footer .footer-below {
     object-fit: contain;
 }
 
-/* Balance individual badge sizes */
-.certification-item:nth-child(1) .certification-img {
-    height: 245px;
-}
-
-.certification-item:nth-child(2) .certification-img {
-    height: 220px;
-}
-
-.certification-item:nth-child(3) .certification-img {
+/* Keep all four credential cards aligned. */
+.certification-item .certification-img {
     height: 235px;
+}
+
+@media (min-width: 768px) {
+    .certification-item:nth-child(odd) {
+        clear: left;
+    }
 }
 
 .certification-item h3 {
@@ -591,9 +589,7 @@ footer .footer-below {
         padding: 45px 0 40px;
     }
 
-    .certification-item:nth-child(1) .certification-img,
-    .certification-item:nth-child(2) .certification-img,
-    .certification-item:nth-child(3) .certification-img {
+    .certification-item .certification-img {
         height: 210px;
     }
 
