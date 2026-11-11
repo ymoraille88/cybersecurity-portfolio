@@ -557,6 +557,14 @@ footer .footer-below {
     margin: 0 auto 20px;
 }
 
+/* Credly's Security+ image has wide transparent side margins. */
+.certification-item .certification-img[src$="comptia-security-plus.png"] {
+    object-fit: cover;
+    object-position: center;
+    width: 210px;
+    max-width: 100%;
+}
+
 #certifications .certification-button {
     margin-top: auto;
 }
